@@ -8,7 +8,6 @@ class Timer
     hours = @seconds / (60 * 60)
     minutes = (@seconds % (60 * 60)) / 60
     seconds = (@seconds % 60)
-    new_time = "#{hours}:#{minutes}:#{seconds}"
 
 [Timer.format_num(hours), Timer.format_num(minutes), Timer.format_num(seconds)].join(":")
   end
