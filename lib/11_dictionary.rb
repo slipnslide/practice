@@ -1,3 +1,11 @@
 class Dictionary
-  # TODO: your code goes here!
+  attr_reader :entries, :keywords
+  def initialize
+    @entries = {}
+  end
+
+  def add(hash)
+    @entries = hash
+    @keywords = hash[keys]
+  end
 end
